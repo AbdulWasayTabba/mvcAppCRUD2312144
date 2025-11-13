@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="p-5 mb-4 bg-light rounded-3 jumbotron">
+    <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">Welcome to the Store</h1>
+        <p class="col-md-8 fs-4">The best place to manage your inventory efficiently. Track prices, update stock, and organize your catalog in one place.</p>
+        <a class="btn btn-primary btn-lg" asp-controller="Products" asp-action="Index" role="button">View Inventory &raquo;</a>
+    </div>
+</div>
+
+<div class="row align-items-md-stretch">
+    <div class="col-md-6">
+        <div class="h-100 p-5 text-white bg-dark rounded-3">
+            <h2>Add New Items</h2>
+            <p>Expand your catalog by adding new products to the database with our easy-to-use interface.</p>
+            <a class="btn btn-outline-light" asp-controller="Products" asp-action="Create">Add Product</a>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="h-100 p-5 bg-light border rounded-3">
+            <h2>Admin Dashboard</h2>
+            <p>Need to check the database status or configure settings? (You can add more admin features here later).</p>
+            <button class="btn btn-outline-secondary" type="button">Settings</button>
+        </div>
+    </div>
+</div>
